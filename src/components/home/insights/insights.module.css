@@ -1,0 +1,131 @@
+.insightsContainer {
+  width: 100%;
+  padding: 8% 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.insightsContainerTitle {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  color: #282f3b;
+  font-family: "League Spartan", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.insightsFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.insightsCard {
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+  border-radius: 10px;
+  box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.05);
+}
+
+.insightsImgDiv {
+  width: 100%;
+  height: 220px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 14px;
+}
+
+.insightsDateTag {
+  background-color: #1a7f45;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.insightsInfoBox {
+  padding: 0 20px;
+}
+
+.insightsActionBox {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #4a4e56;
+  color: #4a4e56;
+  padding: 20px 0;
+}
+
+.insightsActionDiv {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #4a4e56;
+}
+
+.insightsInfoTitle {
+  margin: 20px 0;
+  color: #282f3b;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 27px;
+  font-family: "League Spartan", sans-serif;
+}
+
+.insightsInfoSubTitle {
+  margin-bottom: 20px;
+  color: #4a4e56;
+  line-height: 27px;
+  font-size: 17px;
+}
+
+.insightsInfoLink {
+  display: flex;
+  align-items: center;
+}
+
+.insightsInfoLink a {
+  text-decoration: none;
+}
+
+.insightsCardReadMoreDiv {
+  color: #0a74b0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.insightsCardReadMoreDiv a {
+  font-family: "League Spartan", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #0a74b0;
+}
+
+.insightsCardReadMoreDiv svg {
+  font-size: 24px;
+  transition: all 0.7s;
+}
+
+.insightsCardReadMoreDiv:hover svg {
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .insightsContainer {
+    padding: 10% 5%;
+  }
+
+  .insightsCard {
+    width: 100%;
+  }
+
+  .insightsFlex {
+    flex-direction: column;
+    gap: 30px;
+  }
+}

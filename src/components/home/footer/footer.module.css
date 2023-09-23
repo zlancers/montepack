@@ -1,0 +1,140 @@
+.mainFooterContainer {
+  padding: 5% 8%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #0a74b0;
+  width: 100%;
+}
+
+.footerLogoDiv {
+  width: 30%;
+}
+
+.logoImg {
+  width: 200px;
+  height: auto;
+}
+
+.footerDesc {
+  color: #fff;
+  line-height: 26px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.footerMediaDiv {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footerMediaDiv a svg {
+  color: #fff;
+  font-size: 24px;
+}
+
+.footerDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 48%;
+}
+
+.footerTitle {
+  color: #fff;
+  font-family: "League Spartan", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.footerLink {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.7s;
+}
+
+.footerLink span {
+  color: #ffffff80;
+}
+
+.footerLink:hover span {
+  color: #0a74b0;
+}
+
+.footerInfoDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 30%;
+}
+
+.footerLable {
+  color: #fff;
+  font-weight: 500;
+}
+
+.footerInfo {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footerPolicyDiv {
+  background-color: #045684;
+  display: flex;
+  align-items: center;
+  padding: 1% 8%;
+  justify-content: space-between;
+  color: white;
+}
+
+.footerPolicyInfoDiv {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footerPolicyInfo {
+  font-size: 12px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.linkDiv {
+  display: flex;
+  width: 34%;
+}
+
+@media (max-width: 768px) {
+  .mainFooterContainer {
+    padding: 10% 5%;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footerLogoDiv {
+    width: 100%;
+  }
+
+  .linkDiv {
+    width: 100%;
+  }
+  .footerInfoDiv {
+    width: 100%;
+  }
+
+  .footerTitle {
+    margin-bottom: 10px;
+  }
+
+  .footerPolicyDiv {
+    padding: 2% 5%;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footerPolicyInfoDiv {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}

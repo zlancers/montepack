@@ -1,0 +1,139 @@
+.featuresContainer {
+  width: 100%;
+  height: 100vh;
+  padding: 5% 8%;
+}
+
+.featuresInnerContainer {
+  /* width: 100%; */
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  position: relative;
+}
+
+.featuresInnerContainer::before {
+  background: linear-gradient(0deg, #002236 2%, rgba(0, 0, 0, 0) 100%);
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  transition: all 0.5s ease;
+  border-radius: 10px;
+}
+
+.featuresSideBar {
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+  height: fit-content;
+  margin-left: 5%;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: -20px;
+  z-index: 5;
+}
+
+.featuresSideBarBtn {
+  border-bottom: 1px solid gray;
+  padding: 26px 16px;
+  font-family: "League Spartan", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #282f3b;
+  border-bottom-width: 80%;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+
+.featuresSideBarBtn:hover {
+  transform: translateX(5px);
+}
+
+.featuresSideBarContactBtn {
+  font-family: "League Spartan", sans-serif;
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  background-color: #0a74b0;
+  gap: 10px;
+  line-height: 1.1;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.featuresSideBarContactBtnIcon {
+  width: 46px;
+  height: 40px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.featuresSideBarContactIcon {
+  color: #078586;
+  font-size: 24px;
+}
+
+.featuresContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+  z-index: 5;
+  width: 72%;
+}
+
+.featuresSubTitle {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-family: "League Spartan", sans-serif;
+}
+
+.featuresDesc {
+  color: #fff;
+  line-height: 27px;
+  font-size: 17px;
+}
+
+@media (max-width: 768px) {
+  .featuresContainer {
+    height: auto;
+    padding: 10% 5%;
+  }
+
+  .featuresInnerContainer {
+    flex-direction: column;
+    padding: 20px;
+    gap: 50px;
+  }
+
+  .featuresSideBar {
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 0px;
+  }
+
+  .featuresContent {
+    gap: 20px;
+    width: 100%;
+  }
+
+  .featuresSubTitle {
+    font-size: 10vw;
+    line-height: 1.1;
+  }
+
+  .featuresInnerContainer::before {
+    background: linear-gradient(0deg, #002236 42%, rgba(0, 0, 0, 0) 100%);
+  }
+}

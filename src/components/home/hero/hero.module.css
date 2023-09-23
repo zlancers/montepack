@@ -1,0 +1,71 @@
+.heroCarousalContainer {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroContainerTitle {
+  color: #fff;
+  text-shadow: 2px 2px 0px #0a74b0;
+  font-family: "League Spartan", sans-serif;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 80px;
+  width: 80%;
+  text-align: center;
+}
+
+.heroContainerBtnDiv {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.heroContainerAboutBtn,
+.heroContainerServiceBtn {
+  border: none;
+  background-color: #0a74b0;
+  color: #fff;
+  padding: 20px 0;
+  width: 200px;
+  font-family: "League Spartan", sans-serif;
+  border-radius: 10px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.heroContainerAboutBtn:hover {
+  color: #0a74b0;
+  background-color: #fff;
+}
+
+.heroContainerServiceBtn {
+  color: #0a74b0;
+  background-color: #fff;
+}
+
+.heroContainerServiceBtn:hover {
+  color: #fff;
+  background-color: #0a74b0;
+}
+
+@media (max-width: 768px) {
+  .heroCarousalContainer {
+    height: 60vh;
+  }
+  .heroContainerTitle {
+    font-size: 30px;
+    line-height: 1.1;
+  }
+
+  .heroContainerAboutBtn,
+  .heroContainerServiceBtn {
+    width: 120px;
+    font-size: 18px;
+    padding: 16px 0;
+  }
+}

@@ -1,0 +1,153 @@
+.testimonialContainer {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.testimonialContainer::before {
+  background: #00193e;
+  opacity: 0.83;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  transition: all 0.5s ease;
+  border-radius: 10px;
+}
+
+.testimonialImgDiv {
+  width: 40%;
+  z-index: 5;
+  height: auto;
+}
+
+.testimonialImg {
+  width: 100%;
+  height: 100%;
+}
+
+.testimonialInfoDiv {
+  width: 60%;
+  padding: 70px;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonialTitle {
+  font-family: "League Spartan", sans-serif;
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.testimoniaRatings {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 10px;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+.testimoniaRatings svg {
+  color: #dfda5b;
+}
+
+.testimonialSubInfoDiv {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.testimonialIconDiv {
+  width: 40px;
+  height: auto;
+}
+
+.testimonialImgIcon {
+  width: 100%;
+  height: auto;
+}
+
+.testimonialUserDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.testimonialName {
+  color: #fff;
+  font-family: "League Spartan", sans-serif;
+  font-size: 26px;
+}
+
+.testimonialPost {
+  color: #0a74b0;
+  font-size: 12px;
+}
+
+.testimonialData {
+  color: #fff;
+  font-family: "League Spartan", sans-serif;
+  font-size: 24px;
+  line-height: 27px;
+}
+
+.testimonialNavigationDiv {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.testimonialNavigationDiv {
+  font-size: 24px;
+  color: #fff;
+  margin-top: auto;
+}
+
+.testimonialNavigationDiv {
+  cursor: pointer;
+}
+
+.testimonialpage {
+  color: #fff;
+}
+.testimonialpage {
+  font-size: 22px;
+}
+
+.testimonialpage span {
+  font-size: 28px;
+}
+
+@media (max-width: 768px) {
+  .testimonialContainer {
+    flex-direction: column;
+  }
+  .testimonialImgDiv {
+    width: 100%;
+    height: 200px;
+  }
+
+  .testimonialContainer::before {
+    border-radius: 0px;
+  }
+
+  .testimonialImg {
+    object-fit: cover;
+  }
+
+  .testimonialInfoDiv {
+    width: 100%;
+    padding: 30px;
+    min-height: 80vh;
+  }
+}

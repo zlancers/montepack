@@ -1,0 +1,95 @@
+.contactContainer {
+  padding: 5% 8%;
+}
+
+.contactInnerContainer {
+  width: 70%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+.contactContainerTitle {
+  color: #282f3b;
+  font-family: "League Spartan", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.contactContainerTitle span {
+  color: #0a74b0;
+}
+
+.contactContainerSubTitle {
+  color: #282f3b;
+  margin-bottom: 50px;
+}
+
+.contactForm {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+
+.contactInputBox {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #8f8f8f;
+  padding: 0 10px;
+  width: 30%;
+}
+
+.contactInputBox input {
+  border: none;
+  outline: none;
+  padding: 14px 0;
+}
+
+.contactInputBox svg {
+  color: #0a74b0;
+  font-size: 18px;
+}
+
+.contactSubmitBtn {
+  background-color: #0a74b0;
+  border: none;
+  color: #fff;
+  width: 30%;
+  font-family: "League Spartan", sans-serif;
+  padding: 16px 0;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .contactContainer {
+    padding: 10% 5%;
+  }
+
+  .contactInnerContainer {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .contactForm {
+    flex-direction: column;
+  }
+
+  .contactInputBox {
+    width: 100%;
+  }
+
+  .contactInputBox input {
+    width: inherit;
+  }
+
+  .contactSubmitBtn {
+    width: 100%;
+  }
+}

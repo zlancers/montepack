@@ -1,0 +1,110 @@
+.serviceHomeContainer {
+  padding: 5% 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3faff;
+  padding-bottom: 20%;
+}
+
+.serviceTitle {
+  /* text-decoration: none; */
+  font-size: 50px;
+  font-weight: 600;
+  color: #282f3b;
+  font-family: "League Spartan", sans-serif;
+  letter-spacing: 0.5px;
+}
+.serviceSubTitle {
+  color: #4a4e56;
+  text-align: center;
+  width: 70%;
+  line-height: 27px;
+  font-size: 17px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.serviceCardDiv {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 40px;
+}
+
+.serviceCard {
+  width: 32%;
+  color: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 10px;
+  min-height: 460px;
+}
+
+.serviceCardImgDiv {
+  width: 100%;
+}
+
+.serviceCardImg {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.serviceCardTitle {
+  color: #282f3b;
+  font-family: "League Spartan", sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.serviceCardSubTitle {
+  color: #4a4e56;
+  line-height: 27px;
+  font-size: 17px;
+}
+
+.serviceCardKnowMoreDiv {
+  color: #0a74b0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+.serviceCardKnowMoreDiv a {
+  font-family: "League Spartan", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #0a74b0;
+}
+
+.serviceCardKnowMoreDiv svg {
+  font-size: 24px;
+  transition: all 0.7s;
+}
+
+.serviceCardKnowMoreDiv:hover svg {
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .serviceHomeContainer {
+    padding: 10% 5%;
+  }
+
+  .serviceSubTitle {
+    width: 100%;
+  }
+
+  .serviceCard {
+    width: 100%;
+  }
+}

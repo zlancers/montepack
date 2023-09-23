@@ -1,0 +1,136 @@
+.clientsComponent {
+  padding: 5% 8%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.achievementsNoBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.achievementsDiv {
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  border: 1px dashed #e4e7ee;
+  width: 23%;
+}
+
+.achievementsIconDiv {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.achievementsImgDiv {
+  width: 40px;
+  height: auto;
+}
+
+.achievementsImgIcon {
+  width: 100%;
+  height: auto;
+}
+
+.achievementsNo span {
+  color: #0a74b0;
+  font-family: "League Spartan", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.achievementsNoAddIcon {
+  color: #1a7f45;
+  font-family: "League Spartan", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.achievementsTitle {
+  color: #333;
+  font-family: "League Spartan", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.clientFlexDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.certificateContainerFlexBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.certificateImgDiv {
+  border-radius: 10px;
+  border: 1px solid #cacaca;
+  background: rgba(255, 255, 255, 0);
+  /* box-shadow: 0px 0px 10px 0px rgba(25, 25, 25, 0.22); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.certificateImg {
+  width: 100%;
+  height: auto;
+}
+
+.serviceCardKnowMoreDiv {
+  color: #0a74b0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  /* margin-top: auto; */
+  margin: auto;
+}
+
+.serviceCardKnowMoreDiv a {
+  font-family: "League Spartan", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #0a74b0;
+}
+
+.serviceCardKnowMoreDiv svg {
+  font-size: 24px;
+  transition: all 0.7s;
+}
+
+.serviceCardKnowMoreDiv:hover svg {
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .clientsComponent {
+    padding: 10% 5%;
+  }
+
+  .achievementsNoBox {
+    flex-wrap: wrap;
+    gap: 26px;
+  }
+
+  .achievementsDiv {
+    width: 100%;
+  }
+
+  .swiper-slide {
+    width: 48%;
+  }
+}
